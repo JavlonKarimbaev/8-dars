@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.continer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 165px;
+}
+
+.nav {
+    display: none;
+}
+
+nav a {
+    color: rgb(54, 83, 107);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+nav button {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: rgb(186, 66, 112);
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    letter-spacing: -0.12px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.section1 h1 {
+    color: rgb(54, 83, 107);
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    text-align: left;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 165px;
+}
+
+.section2 {
+    height: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 165px;
+    background: rgb(27, 38, 47);
+}
+
+.section2__texts h2 {
+    color: rgb(251, 252, 254);
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    text-align: left;
+}
+
+.section2__texts p {
+    color: gray;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 410px;
+}
+
+.section2__texts button {
+    box-sizing: border-box;
+    border: 1px solid rgb(251, 252, 254);
+    border-radius: 24px;
+    background-color: transparent;
+    width: 173px;
+    height: 50px;
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+    text-align: center;
+}
+
+.section2__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section2__logos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section2__logos .logos__1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 535px;
+}
+
+.section2__logos .logos__2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 535px;
+}
+
+
+
+@media (max-width:769px) {
+    .continer {
+        padding: 40px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 65px;
+        max-width: 769px;
+    }
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 img {
+        width: 200px;
+        height: 300px;
+    }
+
+    nav button {
+        margin-left: 85px;
+    }
+
+    .section1 h1 {
+        color: rgb(54, 83, 107);
+        font-family: DM Serif Display;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        text-align: center;
+    }
+
+    .section2 {
+        flex-direction: column;
+        height: 615px;
+    }
+
+}
+
+
+@media (max-width:376px) {
+    .nav {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .continer {
+        padding: 40px 24px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section1 h1 {
+        color: rgb(54, 83, 107);
+        font-family: DM Serif Display;
+        font-size: 32px;
+        font-weight: 400;
+        width: 50px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        text-align: center;
+    }
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 24px;
+    }
+    .section2__texts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2__texts p {
+        width: 350px;
+        text-align: center;
+    }
+
+    .section2__texts h2{
+        font-size: 36px;
+    }
+    .section2{
+        width: 100%;
+        height: 670px;
+    }
+
+    .logos__1{
+        width: 264px;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .logos__2{
+        width: 264px;
+        gap: 44px;
+        flex-direction: column;
+    }
+
+    .section2__logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logos__1 img{
+        width: 115px;
+    }
+}
